@@ -391,6 +391,7 @@ body {
   margin: 0 7%;
 }
 .faq__item {
+  position: relative;
   padding: 0 7%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.627), transparent);
 }
@@ -424,6 +425,15 @@ body {
   padding-bottom: 1em;
   font-size: 16px;
   font-family: "RF Dewi Expanded SB";
+}
+.faq__btn {
+  position: absolute;
+  right: 6.5%;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
 }
 .faq::before {
   background: black;
@@ -760,6 +770,14 @@ body {
   .pluses::before {
     background-position: 0 100%;
   }
+
+  .contacts__title {
+    margin-left: 12%;
+    width: 35%;
+  }
+  .contacts__list {
+    padding: 0 12%;
+  }
 }
 @media (min-width: 2200px) {
   .begin-courier {
@@ -776,6 +794,17 @@ body {
 
   .pluses__text {
     font-size: 22px;
+  }
+
+  .contacts__title {
+    margin-left: 17%;
+    width: 30%;
+  }
+  .contacts__subtitle {
+    width: 35%;
+  }
+  .contacts__list {
+    padding: 0 17%;
   }
 }
 @media print {
@@ -941,6 +970,43 @@ a:visited {
   }
   .footer__tg-link {
     top: 46px;
+  }
+}
+@media (min-width: 2000px) {
+  .footer__nav {
+    margin: auto 12%;
+    width: 26%;
+  }
+  .footer__logo {
+    margin: auto 12%;
+    width: 26%;
+  }
+  .footer__menu {
+    width: 48%;
+    margin-right: 12%;
+  }
+  .footer__chat {
+    width: 28%;
+    margin-left: 12%;
+  }
+}
+@media (min-width: 2400px) {
+  .footer__nav {
+    margin: auto 17%;
+    margin-right: 12%;
+    width: 21%;
+  }
+  .footer__logo {
+    margin: auto 17%;
+    width: 16%;
+  }
+  .footer__menu {
+    width: 43%;
+    margin-right: 17%;
+  }
+  .footer__chat {
+    width: 23%;
+    margin-left: 17%;
   }
 }
 @media print {
